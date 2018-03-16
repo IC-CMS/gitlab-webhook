@@ -27,23 +27,30 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+        <!-- Spring Web Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>cms.sre</groupId>
-            <artifactId>dna</artifactId>
-        </dependency>
+
+        <!-- Homegrown Dependencies -->
         <dependency>
             <groupId>cms.sre</groupId>
             <artifactId>dna-common-data-model</artifactId>
             <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cms.sre</groupId>
+            <artifactId>mongo-connection-helper</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- Testing Dependencies -->
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+            <version>2.0.3</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
