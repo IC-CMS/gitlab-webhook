@@ -21,10 +21,13 @@ public class GitlabSourceControlCommitEventEmitter {
     private String classification;
 
     public void emitEvent(GitlabPushEvent event){
+        String name = event.getProject() == null ? event.getRepository().getName() : event.getProject().getName();
+        String sslUrl = event.getProject() == null ? event.getRepository().getGit_ssh_url() : event.getProject().getSsh_url();
+        
         SourceControlCommitEvent emittedEvent = new SourceControlCommitEvent(this.classification, "gitlab-webhook")
                 .setBranchName(event.getRef())
-                .setRepositoryName(event.getProject().getName())
-                .setSshUrl(event.getProject().getSsh_url())
+                .setRepositoryName(name)
+                .setSshUrl(sslUrl)
                 .setUserEmail(event.getUser_email())
                 .setUserName(event.getUser_name());
 
