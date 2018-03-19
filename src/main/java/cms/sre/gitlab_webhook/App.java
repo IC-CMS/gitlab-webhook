@@ -57,8 +57,8 @@ public class App extends AbstractMongoConfiguration{
                 .setReplicaSetLocations(this.mongoReplicaSetLocation)
                 .setReplicaSetName(this.mongoReplicaSetName);
 
-        return MongoClientFactory.getLocalhostMongoClient();
-//        return MongoClientFactory.getMongoClient(params);
+//        return MongoClientFactory.getLocalhostMongoClient();
+        return MongoClientFactory.getMongoClient(params);
     }
 
     @Override
