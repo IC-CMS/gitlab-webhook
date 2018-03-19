@@ -20,6 +20,8 @@ public class GitlabSourceControlCommitEventEmitter {
     @Value("${gitlab.classification:UNKNOWN}")
     private String classification;
 
+    //TODO: Constructors!!!
+    
     public void emitEvent(GitlabPushEvent event){
         String name = event.getProject() == null ? event.getRepository().getName() : event.getProject().getName();
         String sslUrl = event.getProject() == null ? event.getRepository().getGit_ssh_url() : event.getProject().getSsh_url();
