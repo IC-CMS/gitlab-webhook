@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'curl https://raw.githubusercontent.com/IC-CMS/maven-settings/master/settings.xml | tee /root/.m2/settings.xml > /dev/null'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
