@@ -6,4 +6,4 @@ ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
 ADD target/lib           /usr/share/myservice/lib
 # Add the service itself
 ARG JAR_FILE
-ADD target/${JAR_FILE} /usr/share/myservice/myservice.jar
+ADD gitlab-webhook-1.0.jar /usr/share/myservice/myservice.jar
