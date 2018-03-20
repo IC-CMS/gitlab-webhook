@@ -1,8 +1,7 @@
 pipeline {
   agent none
    stages {
-
-     /*stage('Build') {
+     stage('Build') {
 		agent {
 			docker {
 			  image 'maven:3-alpine'
@@ -13,11 +12,11 @@ pipeline {
 		 sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean install'
 
 	   }
-	 }*/
+	 }
      stage('Publish'){
         agent any
         steps{
-            sh 'pwd'
+            sh 'ls'
             //sh 'docker build target -f Dockerfile -t sredna/gitlab-webhook:latest'
         }
      }
