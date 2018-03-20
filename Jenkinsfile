@@ -10,7 +10,7 @@ pipeline {
 		}
 	   steps {
 		 //sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean package'
-		 sh 'ls /host/bin/docker'
+		 sh '/host/bin/docker'
 		 //sh '/host/bin/docker build target -f Dockerfile -t sredna/gitlab-webhook:latest'
 	   }
 	 }
