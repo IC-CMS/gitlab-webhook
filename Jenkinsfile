@@ -11,7 +11,7 @@ pipeline {
 	   steps {
 		 sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean package'
 		 sh 'ls'
-		 sh 'docker build target -f Dockerfile -t sredna/gitlab-webhook:latest'
+		 sh '/usr/bin/docker build target -f Dockerfile -t sredna/gitlab-webhook:latest'
 	   }
 	 }
    }
