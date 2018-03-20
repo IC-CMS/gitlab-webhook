@@ -11,7 +11,7 @@ pipeline {
                 sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean package'
                 sh '/usr/bin/docker login -u dhessler -p credentials(\'Docker-Password\')'
                 sh 'ls -lart'
-                sh 'cat /Dockerfile'
+                sh 'cat ./Dockerfile'
                 sh '/usr/bin/docker build ./target -f ./Dockerfile -t sredna/gitlab-webhook:latest'
                 sh '/usr/bin/docker push sredna/gitlab-webhook:latest'
             }
