@@ -4,6 +4,7 @@ import cms.sre.mongo_connection_helper.MongoClientFactory;
 import cms.sre.mongo_connection_helper.MongoClientParameters;
 import com.mongodb.MongoClient;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
@@ -73,5 +74,9 @@ public class App extends AbstractMongoConfiguration{
     @Override
     protected String getDatabaseName() {
         return this.mongoDatabaseName;
+    }
+
+    public static void main(String[] args){
+        SpringApplication.run(App.class, args);
     }
 }
