@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+          docker {
+              image 'maven:3-alpine'
+              args '-v /root/.m2:/root/.m2 -u root:root'
+          }
+      }
   stages {
     stage('Fetch Settings') {
       agent any
@@ -9,15 +14,8 @@ pipeline {
       }
     }
     stage('Build') {
-      agent {
-        docker {
-          image 'maven:3-alpine'
-          args '-v /root/.m2:/root/.m2 ~/tmp/maven_settings:/usr/share/maven/ref/'
-        }
-        
-      }
       steps {
-        sh 'mvn -B -DskipTests clean package -s /usr/share/maven/ref/settings.xml'
+        sh 'mvn -B -DskipTests clean package -s ~/tmp/maven_settings/settings.xml'
       }
     }
     stage('Clean up') {
