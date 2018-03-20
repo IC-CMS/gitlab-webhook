@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn -B -DskipTests clean package -s /tmp/maven_settings/settings.xml'
+        sh 'mvn -B -DskipTests clean package dockerfile:build -s /tmp/maven_settings/settings.xml'
       }
     }
   }
