@@ -10,8 +10,8 @@ pipeline {
     stage('Fetch Settings') {
       agent any
       steps {
-        sh 'mkdir ~/maven_settings'
-        sh 'curl https://raw.githubusercontent.com/IC-CMS/maven-settings/master/settings.xml -o ~/maven_settings/settings.xml'
+        sh 'mkdir /maven_settings'
+        sh 'curl https://raw.githubusercontent.com/IC-CMS/maven-settings/master/settings.xml -o /maven_settings/settings.xml'
       }
     }
     stage('Build') {
@@ -22,7 +22,7 @@ pipeline {
     stage('Clean up') {
       agent any
       steps {
-        sh 'rm -rf ~/maven_settings'
+        sh 'rm -rf /maven_settings'
       }
     }
   }
