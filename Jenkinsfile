@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean deploy'
+        sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean install'
+        sh 'docker build target -f Dockerfile -t sredna/gitlab-webhook:latest'
       }
     }
   }

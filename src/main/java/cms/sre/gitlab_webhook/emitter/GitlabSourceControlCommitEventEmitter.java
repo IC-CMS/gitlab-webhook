@@ -6,6 +6,7 @@ import cms.sre.gitlab_webhook.model.GitLabCommit;
 import cms.sre.gitlab_webhook.model.GitlabPushEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
@@ -17,11 +18,9 @@ public class GitlabSourceControlCommitEventEmitter {
     @Autowired
     private MongoTemplate template;
 
-    @Value("${gitlab.classification:UNKNOWN}")
+    @Autowired
     private String classification;
 
-    //TODO: Constructors!!!
-    
     public void emitEvent(GitlabPushEvent event){
         String name = event.getProject() == null ? event.getRepository().getName() : event.getProject().getName();
         String sslUrl = event.getProject() == null ? event.getRepository().getGit_ssh_url() : event.getProject().getSsh_url();

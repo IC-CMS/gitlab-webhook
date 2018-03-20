@@ -5,6 +5,7 @@ import cms.sre.mongo_connection_helper.MongoClientParameters;
 import com.mongodb.MongoClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 
@@ -16,7 +17,7 @@ public class App extends AbstractMongoConfiguration{
     @Value("${mongodb.databaseName:null}")
     private String mongoDatabaseName;
 
-    @Value("${mongodb.keyStoreKeyPassword:null")
+    @Value("${mongodb.keyStoreKeyPassword:null}")
     private String mongoKeyStoreKeyPassword;
 
     @Value("${mongodb.keyStoreLocation:null}")
@@ -31,7 +32,7 @@ public class App extends AbstractMongoConfiguration{
     @Value("${mongodb.trustStorePassword:null}")
     private String mongoTrustStorePassword;
 
-    @Value("${mongodb.username:null")
+    @Value("${mongodb.username:null}")
     private String mongoUsername;
 
     @Value("${mongodb.password:null}")
@@ -42,6 +43,14 @@ public class App extends AbstractMongoConfiguration{
 
     @Value("${mongodb.mongoReplicaSetName:null}")
     private String mongoReplicaSetName;
+
+    @Value("${gitlab.classification:UNKNOWN}")
+    private String gitlabClassification;
+
+    @Bean
+    public String classification(){
+        return this.gitlabClassification;
+    }
 
     @Override
     public MongoClient mongoClient() {
