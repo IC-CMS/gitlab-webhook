@@ -5,20 +5,14 @@ pipeline {
 		agent {
 			docker {
 			  image 'maven:3-alpine'
-			  args '-v /root/.m2:/root/.m2 -v /tmp/maven_settings:/tmp/maven_settings'
+			  args '-v /root/.m2:/root/.m2 -v /tmp/maven_settings:/tmp/maven_settings -v /usr/bin/docker:/usr/bin/docker'
 			}
 		}
 	   steps {
 		 sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean package'
-		 sh 'pwd'
+		 sh 'ls'
+		 sh 'docker build target -f Dockerfile -t sredna/gitlab-webhook:latest'
 	   }
 	 }
-     stage('Publish'){
-        agent any
-        steps{
-            sh 'pwd'
-            //sh 'docker build target -f Dockerfile -t sredna/gitlab-webhook:latest'
-        }
-     }
    }
  }
