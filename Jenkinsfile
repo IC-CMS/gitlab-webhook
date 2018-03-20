@@ -9,7 +9,7 @@ pipeline {
 			}
 		}
 	   steps {
-		 sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean install'
+		 sh 'mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean package'
 
 	   }
 	 }
