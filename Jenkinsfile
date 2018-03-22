@@ -15,6 +15,7 @@ pipeline {
                 sh "mvn -B -DskipTests -s /tmp/maven_settings/settings.xml clean package"
                 sh "cp ./Dockerfile target/"
                 sh "/usr/bin/docker build target -f target/Dockerfile -t sredna/gitlab-webhook:latest"
+                sh "/usr/bin/docker tag sredna/gitlab-webhook:latest sredna/gitlab-webhook:1.$BUILD_NUMBER"
                 sh "/usr/bin/docker push sredna/gitlab-webhook:latest"
                 sh "rm -rf /.docker/config.json"
             }
