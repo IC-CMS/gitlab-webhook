@@ -40,7 +40,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: cms.sre:dna-common-data-model:1.0" level="project" />
-    <orderEntry type="library" name="Maven: cms.sre:mongo-connection-helper:1.0" level="project" />
+    <orderEntry type="library" name="Maven: cms.sre:mongo-connection-helper:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
