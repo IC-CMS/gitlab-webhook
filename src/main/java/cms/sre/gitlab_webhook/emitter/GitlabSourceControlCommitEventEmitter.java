@@ -78,9 +78,11 @@ public class GitlabSourceControlCommitEventEmitter {
                 .setSshUrl(sslUrl)
                 .setUserEmail(event.getUser_email())
                 .setUserName(event.getUser_name());
+
         emittedEvent.setRevisionNumber(event.getAfter());
         emittedEvent.setPullNumber(event.getBefore());
-
+        emittedEvent.setNumberOfChanges(this.numberOfChanges(event.getCommits()));
+        emittedEvent.setTimestamp(this.lastModifiedDate(event.getCommits()));
 
 
         List<SourceControlCommit> commits = new LinkedList<SourceControlCommit>();

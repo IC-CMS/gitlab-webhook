@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4a6324a-f475-4f51-9a7e-8c4634f46b43" name="Default" comment="Build not working with multicore argument">
+    <list default="true" id="a4a6324a-f475-4f51-9a7e-8c4634f46b43" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cms_sre_dna_common_data_model_1_1_25.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -85,13 +85,13 @@
       <file leaf-file-name="GitlabSourceControlCommitEventEmitter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="221">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1970#1978#0" expanded="true" />
                 <element signature="e#2032#2040#0" expanded="true" />
-                <element signature="e#1518#1539#0" expanded="true" />
+                <element signature="e#3544#3565#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -402,13 +402,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521047548629</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Fixed Version of dockerfile-maven-plugin">
-      <created>1521556184513</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1521556184513</updated>
     </task>
     <task id="LOCAL-00014" summary="Added Dockerfile">
       <created>1521556682813</created>
@@ -746,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521575060148</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Current Status">
+      <created>1523843288675</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1523843288676</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -819,7 +819,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Debugging where Publish Steps are running." />
     <MESSAGE value="Changed install to package" />
     <MESSAGE value="Trying the approach for docker in docker that Jason Flynn used in Jenkins Toaster" />
     <MESSAGE value="Added Absolute Path to Host's Docker" />
@@ -844,7 +843,8 @@
     <MESSAGE value="Removed relative pathes from docker build" />
     <MESSAGE value="Copied Dockerfile into Target Directory.  &#10;Changed Dockerfile -- Hardcoded jar name" />
     <MESSAGE value="Fixed Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Dockerfile" />
+    <MESSAGE value="Current Status" />
+    <option name="LAST_COMMIT_MESSAGE" value="Current Status" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,13 +1114,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="221">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1970#1978#0" expanded="true" />
             <element signature="e#2032#2040#0" expanded="true" />
-            <element signature="e#1518#1539#0" expanded="true" />
+            <element signature="e#3544#3565#0" expanded="true" />
           </folding>
         </state>
       </provider>
