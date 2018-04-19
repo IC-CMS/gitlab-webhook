@@ -69,37 +69,37 @@ public class GitlabSourceControlCommitEventEmitter {
     }
 
     public void emitEvent(GitlabPushEvent event){
-        System.out.println(event.getProject());
-        System.out.println(event.getRepository());
-        String name = event.getProject() == null ? event.getRepository().getName() : event.getProject().getName();
-        String sslUrl = event.getProject() == null ? event.getRepository().getGit_ssh_url() : event.getProject().getSsh_url();
-        
-        SourceControlCommitEvent emittedEvent = new SourceControlCommitEvent(this.classification, "gitlab-webhook")
-                .setBranchName(event.getRef())
-                .setRepositoryName(name)
-                .setSshUrl(sslUrl)
-                .setUserEmail(event.getUser_email())
-                .setUserName(event.getUser_name());
-
-        emittedEvent.setRevisionNumber(event.getAfter());
-        emittedEvent.setPullNumber(event.getBefore());
-        emittedEvent.setNumberOfChanges(this.numberOfChanges(event.getCommits()));
-        emittedEvent.setTimestamp(this.lastModifiedDate(event.getCommits()));
-
-
-        List<SourceControlCommit> commits = new LinkedList<SourceControlCommit>();
-        event.getCommits().forEach(gitLabCommit -> {
-            SourceControlCommit sourceControlCommit = new SourceControlCommit()
-                    .setAdded(gitLabCommit.getAdded())
-                    .setCommitor(gitLabCommit.getAuthor().getName())
-                    .setMessage(gitLabCommit.getMessage())
-                    .setModified(gitLabCommit.getModified())
-                    .setRemoved(gitLabCommit.getRemoved())
-                    .setTimestamp(gitLabCommit.getTimestamp());
-
-            commits.add(sourceControlCommit);
-        });
-
-        this.template.save(emittedEvent);
+//        System.out.println(event.getProject());
+//        System.out.println(event.getRepository());
+//        String name = event.getProject() == null ? event.getRepository().getName() : event.getProject().getName();
+//        String sslUrl = event.getProject() == null ? event.getRepository().getGit_ssh_url() : event.getProject().getSsh_url();
+//
+//        SourceControlCommitEvent emittedEvent = new SourceControlCommitEvent(this.classification, "gitlab-webhook")
+//                .setBranchName(event.getRef())
+//                .setRepositoryName(name)
+//                .setSshUrl(sslUrl)
+//                .setUserEmail(event.getUser_email())
+//                .setUserName(event.getUser_name());
+//
+//        emittedEvent.setRevisionNumber(event.getAfter());
+//        emittedEvent.setPullNumber(event.getBefore());
+//        emittedEvent.setNumberOfChanges(this.numberOfChanges(event.getCommits()));
+//        emittedEvent.setTimestamp(this.lastModifiedDate(event.getCommits()));
+//
+//
+//        List<SourceControlCommit> commits = new LinkedList<SourceControlCommit>();
+//        event.getCommits().forEach(gitLabCommit -> {
+//            SourceControlCommit sourceControlCommit = new SourceControlCommit()
+//                    .setAdded(gitLabCommit.getAdded())
+//                    .setCommitor(gitLabCommit.getAuthor().getName())
+//                    .setMessage(gitLabCommit.getMessage())
+//                    .setModified(gitLabCommit.getModified())
+//                    .setRemoved(gitLabCommit.getRemoved())
+//                    .setTimestamp(gitLabCommit.getTimestamp());
+//
+//            commits.add(sourceControlCommit);
+//        });
+//
+//        this.template.save(emittedEvent);
     }
 }

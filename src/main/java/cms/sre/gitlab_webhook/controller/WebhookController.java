@@ -2,21 +2,29 @@ package cms.sre.gitlab_webhook.controller;
 
 import cms.sre.gitlab_webhook.emitter.GitlabSourceControlCommitEventEmitter;
 import cms.sre.gitlab_webhook.model.GitlabPushEvent;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import javax.xml.ws.RequestWrapper;
+import java.io.IOException;
 
-@Controller
+@RestController
+@RequestMapping(value = "/gitlabPushEvent")
 public class WebhookController {
+
+    private ObjectMapper mapper = new ObjectMapper();
 
     @Autowired
     private GitlabSourceControlCommitEventEmitter gitlabSourceControlCommitEventEmitter;
 
-    @RequestMapping("/gitlabPushEvent")
-    public GitlabPushEvent gitlabPushEvent(GitlabPushEvent event){
+    @RequestMapping(method = RequestMethod.GET)
+    public String get(){
+        return "{status: 'ok'}";
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public @ResponseBody GitlabPushEvent post(@RequestBody String requestBody) throws IOException {
+        GitlabPushEvent event = mapper.readValue(requestBody, GitlabPushEvent.class);
         this.gitlabSourceControlCommitEventEmitter.emitEvent(event);
         return event;
     }

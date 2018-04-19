@@ -1,6 +1,9 @@
 package cms.sre.gitlab_webhook.controller;
 
 import cms.sre.gitlab_webhook.TestConfiguration;
+import cms.sre.gitlab_webhook.model.GitLablRepository;
+import cms.sre.gitlab_webhook.model.GitlabPushEvent;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -9,11 +12,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultHandler;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = TestConfiguration.class)
@@ -25,14 +31,25 @@ public class WebhookControllerTest {
     @Autowired
     private WebhookController controller;
 
+    @Autowired
+    private MongoTemplate mongoTemplate;
+
     @Test
     public void autowiringTest(){
         Assert.assertNotNull(this.controller);
     }
 
+    @Test
+    public void unknownPropertyTypeTest() throws Exception{
+        MockHttpServletRequestBuilder post = MockMvcRequestBuilders.post("/gitlabPushEvent")
+                .content("{\"object_kind\": \"push\", \"unknown_prop\":\"Helloworld\"}");
+        System.out.println(this.mockMvc.perform(post).andReturn().getResponse().getContentAsString());
 
+    }
 
-    @Ignore(value = "Not working")
+    /*
+        Content comes from https://docs.gitlab.com/ee/user/project/integrations/webhooks.html
+     */
     @Test
     public void gitlabPushEventWithDocumentedData() throws Exception {
         MockHttpServletRequestBuilder post = MockMvcRequestBuilders.post("/gitlabPushEvent")
@@ -106,7 +123,21 @@ public class WebhookControllerTest {
                         "  \"total_commits_count\": 4\n" +
                         "}");
 
-        this.mockMvc.perform(post);
+        String response = this.mockMvc.perform(post)
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+
+        Assert.assertTrue(response.contains("\"object_kind\":\"push\""));
+        Assert.assertTrue(response.contains("\"before\":\"95790bf891e76fee5e1747ab589903a6a1f80f22\""));
+        Assert.assertTrue(response.contains("\"after\":\"da1560886d4f094c3e6c9ef40349f7d38b5d27d7\""));
+        Assert.assertTrue(response.contains("\"ref\":\"refs/heads/master\""));
+        Assert.assertTrue(response.contains("\"checkout_sha\":\"da1560886d4f094c3e6c9ef40349f7d38b5d27d7\""));
+        Assert.assertTrue(response.contains("\"user_id\":4"));
+        Assert.assertTrue(response.contains("\"user_name\":\"John Smith\""));
+        Assert.assertTrue(response.contains("\"user_username\":\"jsmith\""));
+        Assert.assertTrue(response.contains("\"user_email\":\"john@example.com\""));
+        Assert.assertTrue(response.contains("\"project_id\":15"));
     }
 
 }
