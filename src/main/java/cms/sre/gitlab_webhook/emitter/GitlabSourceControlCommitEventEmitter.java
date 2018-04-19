@@ -69,6 +69,8 @@ public class GitlabSourceControlCommitEventEmitter {
     }
 
     public void emitEvent(GitlabPushEvent event){
+        System.out.println(event.getProject());
+        System.out.println(event.getRepository());
         String name = event.getProject() == null ? event.getRepository().getName() : event.getProject().getName();
         String sslUrl = event.getProject() == null ? event.getRepository().getGit_ssh_url() : event.getProject().getSsh_url();
         

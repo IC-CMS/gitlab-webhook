@@ -18,37 +18,37 @@ import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 public class App extends AbstractMongoConfiguration{
 
     @Value("${mongodb.databaseName:#{null}}")
-    private String mongoDatabaseName;
+    protected String mongoDatabaseName;
 
     @Value("${mongodb.keyStoreKeyPassword:#{null}}")
-    private String mongoKeyStoreKeyPassword;
+    protected String mongoKeyStoreKeyPassword;
 
     @Value("${mongodb.keyStoreLocation:#{null}}")
-    private String mongoKeyStoreLocation;
+    protected String mongoKeyStoreLocation;
 
     @Value("${mongodb.keyStorePassword:#{null}}")
-    private String mongoKeyStorePassword;
+    protected String mongoKeyStorePassword;
 
     @Value("${mongodb.trustStoreLocation:#{null}}")
-    private String mongoTrustStoreLocation;
+    protected String mongoTrustStoreLocation;
 
     @Value("${mongodb.trustStorePassword:#{null}}")
-    private String mongoTrustStorePassword;
+    protected String mongoTrustStorePassword;
 
     @Value("${mongodb.username:#{null}}")
-    private String mongoUsername;
+    protected String mongoUsername;
 
     @Value("${mongodb.password:#{null}}")
-    private String mongoPassword;
+    protected String mongoPassword;
 
     @Value("${mongodb.replicaSetLocation:#{null}}")
-    private String[] mongoReplicaSetLocation;
+    protected String[] mongoReplicaSetLocation;
 
     @Value("${mongodb.mongoReplicaSetName:#{null}}")
-    private String mongoReplicaSetName;
+    protected String mongoReplicaSetName;
 
     @Value("${gitlab.classification:UNKNOWN}")
-    private String gitlabClassification;
+    protected String gitlabClassification;
 
     @Bean
     public String classification(){
