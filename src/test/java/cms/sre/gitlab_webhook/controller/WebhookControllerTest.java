@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -31,25 +30,21 @@ public class WebhookControllerTest {
     @Autowired
     private WebhookController controller;
 
-    @Autowired
-    private MongoTemplate mongoTemplate;
-
-    @Ignore
     @Test
     public void autowiringTest(){
         Assert.assertNotNull(this.controller);
     }
 
-    @Ignore
     @Test
     public void unknownPropertyTypeTest() throws Exception{
         MockHttpServletRequestBuilder post = MockMvcRequestBuilders.post("/gitlabPushEvent")
                 .content("{\"object_kind\": \"push\", \"unknown_prop\":\"Helloworld\"}");
-        System.out.println(this.mockMvc.perform(post).andReturn().getResponse().getContentAsString());
+      
+        Assert.assertEquals(mockMvc.perform(post).andReturn().getResponse().getErrorMessage(), 
+            "Missing required Web Hook values to fullfil request");
 
     }
 
-    @Ignore
     /*
         Content comes from https://docs.gitlab.com/ee/user/project/integrations/webhooks.html
      */
