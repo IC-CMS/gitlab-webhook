@@ -5,4 +5,4 @@ RUN chmod u+x /usr/local/bin/docker_entrypoint.sh
 ENV JAVA_OPTS="-Dspring.config.location=/config/"
 ENTRYPOINT ["/usr/local/bin/docker_entrypoint.sh"]
 # Add Maven dependencies (not shaded into the artifact; Docker-cached)
-ADD ./target/gitlab-webhook-1.0.jar /usr/share/myservice/myservice.jar
+ADD ./target/gitlab-webhook.jar /usr/share/myservice/myservice.jar
