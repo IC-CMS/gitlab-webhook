@@ -25,7 +25,6 @@
 	 </parent>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>cms.sre.gitlab_webhook.App</start-class>
     </properties>
     <dependencies>
         <!-- Spring Dependencies -->

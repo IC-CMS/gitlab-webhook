@@ -7,6 +7,7 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 
+import cms.sre.gitlab_webhook.config.AppConfig;
 import org.apache.commons.collections4.ListUtils;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -32,16 +33,7 @@ public class GitlabSourceControlCommitEventEmitter {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
-	private String classification;
-
-	@Value("${terraform.launcher.host}")
-	protected String terraformLauncherHost;
-
-	@Value("${terraform.launcher.port}")
-	protected String terraformLauncherPort;
-
-	@Value("${terraform.launcher.jenkins.request}")
-	protected String terraformLauncheJenkiinsRequest;
+	private AppConfig appConfig;
 
 	private Calendar lastModifiedDate(List<GitLabCommit> commits) {
 		Calendar ret = null;
@@ -113,7 +105,7 @@ public class GitlabSourceControlCommitEventEmitter {
 			return false;
 		}
 
-		SourceControlCommitEvent emittedEvent = new SourceControlCommitEvent(this.classification, "gitlab-webhook")
+		SourceControlCommitEvent emittedEvent = new SourceControlCommitEvent(appConfig.getGitlabClassification(), "gitlab-webhook")
 				.setBranchName(event.getRef()).setRepositoryName(name).setSshUrl(sslUrl)
 				.setUserEmail(event.getUser_email()).setUserName(event.getUser_name());
 
@@ -127,11 +119,11 @@ public class GitlabSourceControlCommitEventEmitter {
 		request.put("object_kind", event.getObject_kind());
 		request.put("project_name", name);
 		request.put("ssl_url", sslUrl);
-		request.put("classification", this.classification);
+		request.put("classification", appConfig.getGitlabClassification());
 		request.put("branch_name", event.getRef());
 		request.put("user_email", event.getUser_email());
 		request.put("user_name", event.getUser_name());
-		request.put("revsion_number", event.getAfter());
+		request.put("revision_number", event.getAfter());
 		request.put("pull_number", event.getBefore());
 		request.put("timestamp", emittedEvent.getTimestamp().getTime());
 		
@@ -145,7 +137,8 @@ public class GitlabSourceControlCommitEventEmitter {
 		
 		try {
 
-		    ResponseEntity<String> buildResponse = restTemplate.exchange("http://" + this.terraformLauncherHost + ":" + this.terraformLauncherPort + this.terraformLauncheJenkiinsRequest,
+		    ResponseEntity<String> buildResponse = restTemplate.exchange("http://" + appConfig.getHost() + ":"
+                            + appConfig.getPort() + appConfig.getJenkinsRequest(),
 			    	HttpMethod.POST, entity, String.class);
 
 		    if (buildResponse.getStatusCode() == HttpStatus.OK) {
