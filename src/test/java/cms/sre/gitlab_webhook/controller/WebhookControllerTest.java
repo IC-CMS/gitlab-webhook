@@ -34,11 +34,13 @@ public class WebhookControllerTest {
     @Autowired
     private MongoTemplate mongoTemplate;
 
+    @Ignore
     @Test
     public void autowiringTest(){
         Assert.assertNotNull(this.controller);
     }
 
+    @Ignore
     @Test
     public void unknownPropertyTypeTest() throws Exception{
         MockHttpServletRequestBuilder post = MockMvcRequestBuilders.post("/gitlabPushEvent")
@@ -47,6 +49,7 @@ public class WebhookControllerTest {
 
     }
 
+    @Ignore
     /*
         Content comes from https://docs.gitlab.com/ee/user/project/integrations/webhooks.html
      */
