@@ -72,6 +72,11 @@ jobs:
       MAVEN_OPTS: -Xmx3200m 
     steps:
       - checkout    
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "pom.xml" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
       # Download and cache dependencies
       - run: mvn -s .circleci/.circleci.settings.xml test
       - store_test_results:          
