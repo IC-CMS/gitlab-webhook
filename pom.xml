@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cms.sre</groupId>
     <artifactId>gitlab-webhook</artifactId>
-    <version>1.0</version>
+    <version>1.0.BUILDNUMBER</version>
     <packaging>jar</packaging>
     <name>gitlab-webhook</name>
     <scm>
