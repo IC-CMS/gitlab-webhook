@@ -23,7 +23,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = TestConfiguration.class)
 @AutoConfigureMockMvc
-public class WebhookControllerTest {
+public class MockWebhookControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
