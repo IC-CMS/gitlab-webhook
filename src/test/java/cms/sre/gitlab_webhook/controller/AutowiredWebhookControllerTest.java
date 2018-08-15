@@ -31,7 +31,7 @@ import static org.junit.Assert.assertThat;
 public class AutowiredWebhookControllerTest {
 
     @Rule
-    public WireMockRule wireMockRule = new WireMockRule(8088); // No-args constructor defaults to port 8080
+    public WireMockRule wireMockRule = new WireMockRule(15352); // No-args constructor defaults to port 8080
 
     @LocalServerPort
     private int port;
