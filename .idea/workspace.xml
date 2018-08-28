@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4a6324a-f475-4f51-9a7e-8c4634f46b43" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cms_sre_dna_common_data_model_1_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gitlab-webhook.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cms_sre_dna_common_data_model_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitlabwebhook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gitlabwebhook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/AutowiredWebhookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/AutowiredWebhookControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,91 +22,119 @@
       <FILTER>cms.sre.gitlab_webhook.emitter.*</FILTER>
     </SUITE>
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="SourceControlCommitEvent.java" pinned="false" current-in-tab="true">
-              <entry file="jar://$MAVEN_REPOSITORY$/cms/sre/dna-common-data-model/1.1.25/dna-common-data-model-1.1.25-sources.jar!/cms/sre/dna_common_data_model/sourceControl/SourceControlCommitEvent.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="68">
-                    <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="GitlabPushEvent.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitlabPushEvent.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="85">
-                    <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1371860908">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="316" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="316" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Jenkinsfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/AutowiredWebhookControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GitlabSourceControlCommitEventEmitter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="205">
+              <caret line="98" column="27" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1970#1978#0" expanded="true" />
-                <element signature="e#2032#2040#0" expanded="true" />
-                <element signature="e#3544#3565#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GitLabCommit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitLabCommit.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="2115">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="90">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/MockWebhookControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3225">
+              <caret line="268" column="72" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/controller/WebhookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2805">
+              <caret line="219" selection-start-line="219" selection-end-line="219" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11520">
+              <caret line="884" selection-start-line="884" selection-end-line="884" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14055">
+              <caret line="999" selection-start-line="999" selection-end-line="999" />
             </state>
           </provider>
         </entry>
@@ -131,6 +155,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -140,19 +169,27 @@
         <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitLablRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitLabProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitlabPushEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/controller/WebhookController.java" />
         <option value="$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java" />
         <option value="$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/TestApp.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/controller/WebhookController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/MockWebhookControllerTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/AutowiredWebhookControllerTest.java" />
       </list>
     </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="AutowiredWebhookControllerTest.getGitlabPushEvent" />
+    </enabled-run-configurations>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -178,10 +215,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="151" />
+    <option name="y" value="35" />
+    <option name="width" value="1717" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -191,6 +228,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,43 +259,37 @@
               <item name="gitlab-webhook" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitlab-webhook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gitlab_webhook" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gitlab-webhook" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitlab-webhook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gitlab_webhook" type="462c0819:PsiDirectoryNode" />
-              <item name="emitter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gitlab-webhook" type="b2602c69:ProjectViewProjectNode" />
               <item name="gitlab-webhook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gitlab_webhook" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532694485878" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -275,120 +308,132 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GitlabSourceControlCommitEventEmitterTest.emitEventTest">
+  <component name="RunManager" selected="JUnit.AutowiredWebhookControllerTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="GitlabSourceControlCommitEventEmitterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gitlabwebhook" />
+    <configuration name="AutowiredWebhookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gitlab-webhook" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cms.sre.gitlab_webhook.emitter.*" />
+          <option name="PATTERN" value="cms.sre.gitlab_webhook.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cms.sre.gitlab_webhook.emitter" />
-      <option name="MAIN_CLASS_NAME" value="cms.sre.gitlab_webhook.emitter.GitlabSourceControlCommitEventEmitterTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+      <option name="PACKAGE_NAME" value="cms.sre.gitlab_webhook.controller" />
+      <option name="MAIN_CLASS_NAME" value="cms.sre.gitlab_webhook.controller.AutowiredWebhookControllerTest" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gitlabwebhook" />
+    <configuration name="AutowiredWebhookControllerTest.exactUrlOnly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gitlab-webhook" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cms.sre.gitlab_webhook.emitter.*" />
+          <option name="PATTERN" value="cms.sre.gitlab_webhook.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cms.sre.gitlab_webhook.emitter" />
-      <option name="MAIN_CLASS_NAME" value="cms.sre.gitlab_webhook.emitter.GitlabSourceControlCommitEventEmitterTest" />
-      <option name="METHOD_NAME" value="emitEventTest" />
+      <option name="PACKAGE_NAME" value="cms.sre.gitlab_webhook.controller" />
+      <option name="MAIN_CLASS_NAME" value="cms.sre.gitlab_webhook.controller.AutowiredWebhookControllerTest" />
+      <option name="METHOD_NAME" value="exactUrlOnly" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutowiredWebhookControllerTest.getGitlabPushEvent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gitlab-webhook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cms.sre.gitlab_webhook.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cms.sre.gitlab_webhook.controller" />
+      <option name="MAIN_CLASS_NAME" value="cms.sre.gitlab_webhook.controller.AutowiredWebhookControllerTest" />
+      <option name="METHOD_NAME" value="getGitlabPushEvent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockWebhookControllerTest.gitlabPushEventWithDocumentedData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gitlab-webhook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cms.sre.gitlab_webhook.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cms.sre.gitlab_webhook.controller" />
+      <option name="MAIN_CLASS_NAME" value="cms.sre.gitlab_webhook.controller.MockWebhookControllerTest" />
+      <option name="METHOD_NAME" value="gitlabPushEventWithDocumentedData" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockWebhookControllerTest.unknownPropertyTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gitlab-webhook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cms.sre.gitlab_webhook.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cms.sre.gitlab_webhook.controller" />
+      <option name="MAIN_CLASS_NAME" value="cms.sre.gitlab_webhook.controller.MockWebhookControllerTest" />
+      <option name="METHOD_NAME" value="unknownPropertyTypeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GitlabSourceControlCommitEventEmitterTest" />
-      <item itemvalue="JUnit.GitlabSourceControlCommitEventEmitterTest.emitEventTest" />
+      <item itemvalue="JUnit.AutowiredWebhookControllerTest" />
+      <item itemvalue="JUnit.AutowiredWebhookControllerTest.getGitlabPushEvent" />
+      <item itemvalue="JUnit.MockWebhookControllerTest.gitlabPushEventWithDocumentedData" />
+      <item itemvalue="JUnit.MockWebhookControllerTest.unknownPropertyTypeTest" />
+      <item itemvalue="JUnit.AutowiredWebhookControllerTest.exactUrlOnly" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GitlabSourceControlCommitEventEmitterTest.emitEventTest" />
-        <item itemvalue="JUnit.GitlabSourceControlCommitEventEmitterTest" />
+        <item itemvalue="JUnit.AutowiredWebhookControllerTest" />
+        <item itemvalue="JUnit.AutowiredWebhookControllerTest.getGitlabPushEvent" />
+        <item itemvalue="JUnit.AutowiredWebhookControllerTest.exactUrlOnly" />
+        <item itemvalue="JUnit.MockWebhookControllerTest.gitlabPushEventWithDocumentedData" />
+        <item itemvalue="JUnit.MockWebhookControllerTest.unknownPropertyTypeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -402,13 +447,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521047548629</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added Dockerfile">
-      <created>1521556682813</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1521556682813</updated>
     </task>
     <task id="LOCAL-00015" summary="Rename DockerFile">
       <created>1521557269160</created>
@@ -746,80 +784,87 @@
       <option name="project" value="LOCAL" />
       <updated>1523843288676</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Finished RestTemplate test that David had started.">
+      <created>1532538417361</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1532538417362</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest - 2018.03.16 at 16h 16m 32s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest - 2018.07.26 at 13h 18m 43s.xml">
+      <configuration name="AutowiredWebhookControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest - 2018.03.16 at 16h 19m 01s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest - 2018.07.26 at 13h 19m 19s.xml">
+      <configuration name="AutowiredWebhookControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest - 2018.03.16 at 16h 21m 20s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest - 2018.07.26 at 13h 20m 03s.xml">
+      <configuration name="AutowiredWebhookControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest_emitEventTest - 2018.03.16 at 16h 22m 17s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest_getGitlabPushEvent - 2018.07.26 at 13h 25m 25s.xml">
+      <configuration name="AutowiredWebhookControllerTest.getGitlabPushEvent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest_emitEventTest - 2018.03.16 at 16h 24m 14s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest - 2018.07.26 at 13h 26m 45s.xml">
+      <configuration name="AutowiredWebhookControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest_emitEventTest - 2018.03.16 at 16h 25m 29s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest_getGitlabPushEvent - 2018.07.26 at 13h 28m 24s.xml">
+      <configuration name="AutowiredWebhookControllerTest.getGitlabPushEvent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest_emitEventTest - 2018.03.16 at 16h 26m 56s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest_getGitlabPushEvent - 2018.07.26 at 13h 30m 36s.xml">
+      <configuration name="AutowiredWebhookControllerTest.getGitlabPushEvent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest_emitEventTest - 2018.03.16 at 16h 28m 10s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest_getGitlabPushEvent - 2018.07.27 at 12h 06m 52s.xml">
+      <configuration name="AutowiredWebhookControllerTest.getGitlabPushEvent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest_emitEventTest - 2018.03.16 at 16h 28m 52s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest_getGitlabPushEvent - 2018.07.27 at 12h 23m 11s.xml">
+      <configuration name="AutowiredWebhookControllerTest.getGitlabPushEvent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GitlabSourceControlCommitEventEmitterTest_emitEventTest - 2018.03.16 at 16h 29m 14s.xml">
-      <configuration name="GitlabSourceControlCommitEventEmitterTest.emitEventTest" configurationId="JUnit" />
+    <history-entry file="AutowiredWebhookControllerTest_getGitlabPushEvent - 2018.07.27 at 12h 24m 35s.xml">
+      <configuration name="AutowiredWebhookControllerTest.getGitlabPushEvent" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32889125" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37254903" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.33372366" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28144988" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1923077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.21002132" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Learn" order="2" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Learn" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1943463" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39834514" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.33411765" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32978722" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32889125" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.21002132" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changed install to package" />
     <MESSAGE value="Trying the approach for docker in docker that Jason Flynn used in Jenkins Toaster" />
     <MESSAGE value="Added Absolute Path to Host's Docker" />
     <MESSAGE value="Debugging." />
@@ -844,162 +889,31 @@
     <MESSAGE value="Copied Dockerfile into Target Directory.  &#10;Changed Dockerfile -- Hardcoded jar name" />
     <MESSAGE value="Fixed Dockerfile" />
     <MESSAGE value="Current Status" />
-    <option name="LAST_COMMIT_MESSAGE" value="Current Status" />
+    <MESSAGE value="Finished RestTemplate test that David had started." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished RestTemplate test that David had started." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java</url>
-          <line>50</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java</url>
+          <line>140</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/controller/WebhookController.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="103" selection-start-line="66" selection-start-column="103" selection-end-line="66" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitlabPushEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitlabPushEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar!/org/springframework/beans/factory/annotation/Value.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1010,22 +924,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitLabAuthor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitLablRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitLabProject.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/cms/sre/dna-common-data-model/1.0/dna-common-data-model-1.0.jar!/cms/sre/dna_common_data_model/sourceControl/SourceControlCommitEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cms/sre/dna-common-data-model/1.0/dna-common-data-model-1.0.jar!/cms/sre/dna_common_data_model/sourceControl/SourceControlCommitEvent.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/de/flapdoodle/embed/de.flapdoodle.embed.mongo/2.0.3/de.flapdoodle.embed.mongo-2.0.3.jar!/de/flapdoodle/embed/mongo/config/Net.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/controller/WebhookController.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="771" column="25" selection-start-line="771" selection-start-column="25" selection-end-line="771" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Math.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1035,13 +936,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/TestApp.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitterTest.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1049,20 +943,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cms/sre/mongo-connection-helper/1.0/mongo-connection-helper-1.0.jar!/cms/sre/mongo_connection_helper/MongoClientFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="113" column="48" lean-forward="true" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cms/sre/mongo-connection-helper/1.0/mongo-connection-helper-1.0.jar!/cms/sre/mongo_connection_helper/MongoClientFactory.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitLabCommit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1084,44 +965,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cms/sre/dna-common-data-model/1.1.25/dna-common-data-model-1.1.25-sources.jar!/cms/sre/dna_common_data_model/sourceControl/SourceControlCommitEvent.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/model/GitlabPushEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cms/sre/dna-common-data-model/1.1.25/dna-common-data-model-1.1.25-sources.jar!/cms/sre/dna_common_data_model/sourceControl/SourceControlCommitEvent.java">
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="26" column="74" lean-forward="true" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+        <state relative-caret-position="60">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/gitlab_webhook.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/utils/WebHookValidationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="195">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/HttpEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="427" selection-start-line="427" selection-end-line="427" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/AutowiredWebhookControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="98" column="27" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2115">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cms/sre/gitlab_webhook/controller/MockWebhookControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3225">
+          <caret line="268" column="72" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/emitter/GitlabSourceControlCommitEventEmitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1970#1978#0" expanded="true" />
-            <element signature="e#2032#2040#0" expanded="true" />
-            <element signature="e#3544#3565#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1140">
+          <caret line="101" column="45" selection-start-line="101" selection-start-column="45" selection-end-line="101" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/sre/gitlab_webhook/controller/WebhookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="219" selection-start-line="219" selection-end-line="219" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11520">
+          <caret line="884" selection-start-line="884" selection-end-line="884" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14055">
+          <caret line="999" selection-start-line="999" selection-end-line="999" />
         </state>
       </provider>
     </entry>
