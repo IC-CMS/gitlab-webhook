@@ -23,6 +23,7 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
+import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -31,7 +32,7 @@ import static org.junit.Assert.assertThat;
 public class AutowiredWebhookControllerTest {
 
     @Rule
-    public WireMockRule wireMockRule = new WireMockRule(15352); // No-args constructor defaults to port 8080
+    public WireMockRule wireMockRule = new WireMockRule(wireMockConfig().dynamicPort());
 
     @LocalServerPort
     private int port;
