@@ -70,6 +70,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
+    parrelism: 1
     working_directory: ~/repo
     environment:
       # Customize the JVM maximum heap limit
