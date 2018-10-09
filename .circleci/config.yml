@@ -114,7 +114,7 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp/workspace
-      - run: mkdir target && mv /tmp/workspace/*.jar target/gitlab-webhook.jar && mv /tmp/workspace/Dockerfile ./Dockerfile
+      - run: mkdir target && mv /tmp/workspace/*.jar target/gitlab-webhook.jar && mv /tmp/workspace/Dockerfile ./Dockerfile & mv /tmp/workspace/docker_entrypoint.sh ./docker_entrypoint.sh
       - run: |
           TAG=1.1.$CIRCLE_BUILD_NUM
           docker build -t sredna/gitlab-webhook:$TAG .
