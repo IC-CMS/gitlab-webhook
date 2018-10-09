@@ -100,7 +100,7 @@ jobs:
           docker push sredna/gitlab-webhook:latest                
 workflows:
   version: 2
-  basic_java_build:
+  full_boat:
     jobs:
     - test
     - package:
@@ -110,14 +110,14 @@ workflows:
           branches:
             only:
             - master
-    - publish_to_bintray:
+    - publishToBintray:
         requires:
         - test
         filters:
           branches:
             only:
             - master
-    - publish_to_docker_hub:
+    - publishToDockerHub:
         requires:
         - package
         filters:
