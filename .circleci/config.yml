@@ -3,32 +3,6 @@
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
 version: 2
-workflows:
-  version: 2
-  basic_java_build:
-    jobs: 
-      - test
-      - package:
-          requires:
-            - test
-          filters:
-            branches:
-              only:
-                - master            
-      - publish_to_bintray:
-          requires:
-            - test
-          filters:
-            branches:
-              only:
-                - master
-      - publish_to_docker_hub:
-          requires:
-            - package
-          filters:
-            branches:
-              only:
-                - master
 jobs:
   package:
     docker:
@@ -91,7 +65,7 @@ jobs:
           paths:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}
-  publish_to_bintray:
+  publishToBintray:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
@@ -108,13 +82,14 @@ jobs:
           - v1-dependencies-
       - run: VERSION_NUM=($CIRCLE_BUILD_NUM) && sed -i "s/BUILDNUMBER/$VERSION_NUM/g" pom.xml
       - run: mvn -s .circleci/.circleci.settings.xml deploy -DskipTests
-  publish_to_docker_hub:
+  publishToDockerHub:
     machine:
       enabled: true
     working_directory: ~/repo
     steps:
       - attach_workspace:
           at: /tmp/workspace
+      - run: ls -lart /tmp/workspace
       - run: mkdir target && mv /tmp/workspace/*.jar target/gitlab-webhook.jar && mv /tmp/workspace/Dockerfile ./Dockerfile & mv /tmp/workspace/docker_entrypoint.sh ./docker_entrypoint.sh
       - run: |
           TAG=1.1.$CIRCLE_BUILD_NUM
@@ -123,3 +98,29 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASS
           docker push sredna/gitlab-webhook:$TAG
           docker push sredna/gitlab-webhook:latest                
+workflows:
+  version: 2
+  full_boat:
+    jobs:
+    - test
+    - package:
+        requires:
+        - test
+        filters:
+          branches:
+            only:
+            - master
+    - publishToBintray:
+        requires:
+        - test
+        filters:
+          branches:
+            only:
+            - master
+    - publishToDockerHub:
+        requires:
+        - package
+        filters:
+          branches:
+            only:
+            - master
